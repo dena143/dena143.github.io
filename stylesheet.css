@@ -1,0 +1,418 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1240px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+header {
+    background-color: silver;
+}
+
+header a {
+    color: white;
+}
+
+.nav-top{
+    position: relative;
+    display: flex;
+    align-items: center;
+    z-index: 999;
+}
+
+.nav-top h2{
+    font-size: 25px;
+}
+
+.logo-top {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav-top-kiri {
+    display: inline-block;
+    margin: 0;
+}
+
+.nav-atas {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.nav-atas-kiri{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.nav-atas-kiri a {
+    background-color: silver;
+    padding: 28px 10px;
+}
+
+.nav-atas a {
+    background-color: silver;
+    padding: 25px 10px;
+}
+
+.nav-atas-kiri a:hover{
+    background-color: rgb(105, 103, 103);
+}
+
+.nav-atas a:hover{
+    background-color: rgb(105, 103, 103);
+}
+
+.cari {
+    display: inline-block;
+    margin: 0 10px 0 374px;
+}
+
+.cari input{
+    border: none;
+    border-radius: 4px;
+    height: 25px;
+}
+
+.login {
+    display: inline-block;
+    margin: 0;
+}
+
+.bag {
+    display: inline-block;
+    margin: 0;
+}
+
+.slide {
+    display: none;
+}
+
+.slide img{
+    float: left;
+}
+
+.img-h{
+    margin-top: 100px;
+    width: 40%;
+    margin-left: 70px;
+}
+
+.img-h2{
+    margin-top: 100px;
+    width: 33%;
+    margin-left: 120px;
+}
+
+.img-v {
+    margin-top: 65px;
+    margin-left: 150px;
+}
+
+.img-v2 {
+    margin-top: 80px;
+    margin-left: 150px;
+}
+
+.description{
+    text-align:center;
+    padding-top: 100px;
+    padding-right: 100px;
+    width: 50%;
+    float: right;
+}
+
+.btn-wrapper{
+    text-align: center;
+    margin: 40px 0;
+}
+
+.btn{
+    padding: 15px 40px;
+    background-color: indigo ;
+    opacity: 0.6;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+.btn-wrapper a{
+    color: white;
+}
+
+.beli{
+    margin-right: 10px;
+}
+
+
+
+/* Slideshow container*/
+
+.slideshow-container{
+    max-width: 1240px;
+    width: 100%;
+    position: relative;
+    margin: 50px auto 0 auto;
+    height: 500px;
+    border: 2px solid rgba(158, 153, 153, 0.692);
+    text-align: center;
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    color: rgb(8, 3, 3);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+    padding: 16px;
+}
+
+/* Position the "next button" to the right*/
+.prev{
+    left: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: grey;
+}
+
+/* Caption text */
+
+.numberslide {
+    color: black;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade{
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.contents {
+    display: flex;
+    position: relative;
+    border: 1px solid violet;
+    padding-left: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.content img{
+    width: 100%;
+}
+
+.content {
+    display: inline-block;
+    flex-wrap: wrap;
+    margin-left: 0;
+    margin-right: 30px;
+    text-align: center;
+}
+
+.content h3 {
+    position: absolute;
+    top: 30%;
+    font-size: 40px;
+    text-align: center;
+}
+
+.content a{
+    opacity: .8;
+}
+
+.content a:hover {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.bottom-wrapper {
+    background-color: rgb(54, 53, 54);
+    padding: 10px 0 80px 0;
+}
+
+.form-wrapper {
+    display: flex;
+    position: relative;
+    margin-top: 50px;
+}
+
+.form-plg input, textarea{
+    width: 300px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 4px;
+}
+
+.form-plg input {
+    height: 30px;
+}
+
+.form-plg {
+    flex-grow: 5;
+}
+
+.kontak {
+    margin-left: 30px;
+}
+
+.kontak img{
+    width: 100%;
+}
+
+.kontak a {
+    opacity: .4;
+}
+
+.kontak h3 {
+    font-size: 40px;
+    position: absolute;
+    top: 10%;
+}
+
+.kontak a:hover {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.btn-form {
+    background-color: indigo;
+    border-radius: 4px;
+    color: white;
+}
+
+.message {
+    padding: 12px 132px;
+    cursor: pointer;
+    box-shadow: 0 7px rgb(36, 3, 36);
+}
+
+.message:active {
+    position: relative;
+    top: 7px;
+    box-shadow: none;
+}
+
+footer {
+    background-color: rgb(26, 25, 25);
+}
+
+footer h3{
+    color: white;
+    font-size: 25px;
+}
+
+footer p{
+    color: white;
+}
+
+.footer-wrapper {
+    display: flex;
+    padding: 20px 0px;
+}
+
+.logo-bawah {
+    margin-right: 250px;
+}
+
+.footer-icon {
+    display: inline-block;
+    margin-left: 30px;
+    align-items: center;
+    justify-items: center;
+}
+
+.garansi svg {
+    margin-left: 30px;
+}
+
+.layanan svg {
+    margin-left: 70px;
+}
+
+.kirim svg {
+    margin-left: 50px;
+}
+
+.temukan {
+    display: inline-block;
+    margin-left: 250px;
+    color: white;
+}
+
+.temukan a {
+    padding-left: 10px;
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next, .text {
+        font-size: 11px;
+    }
+}
